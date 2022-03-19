@@ -37,20 +37,20 @@ int scan(char* line)
   }
   else
   {
-    printf("NULL line ptr\n");
-    printf("lineIndex = %d, lineLength = %d \n", lineIndex, lineLength);
+    //printf("NULL line ptr\n");
+    //printf("lineIndex = %d, lineLength = %d \n", lineIndex, lineLength);
   }
 
   char ch = linePtr[lineIndex];
-  printf("ch = %d\n", ch);
+  //printf("ch = %d\n", ch);
 
   // skip whitespace (spaces and tabs)
   while((ch == ' ' || ch == '\t') && lineIndex < lineLength)
   {
     lineIndex++;
-    printf("WH: idx = %d\n", lineIndex);
+    //printf("WH: idx = %d\n", lineIndex);
     ch = linePtr[lineIndex];
-    printf("WH: %d, %d\n", ch, lineIndex);
+    //printf("WH: %d, %d\n", ch, lineIndex);
   }
 
   // ch should be the first character of the next token
