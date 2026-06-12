@@ -138,3 +138,23 @@ int file_load(char* filename, uint8_t* mem)
   fclose(inputFile);
   return rtn;
 }
+
+/////////////////////////////////////////////////////////////////////////////
+/// @fn file_insertLine
+/// @brief Inserts a line into the program or executes if no line number.
+/// @param[in] line The program line to insert.
+/// @return TODO
+/// /////////////////////////////////////////////////////////////////////////
+int file_insertLine(char* line)
+{
+  int rtn = 0;
+  int firstTok = scan(line);
+  int number = -1;
+  if(firstTok == TOK_INTEGER)
+  {
+    number = scan_getValue();
+  }
+
+
+  return rtn;
+}

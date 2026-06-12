@@ -11,6 +11,6 @@
 #include <stdint.h>
 
 int file_load(char* filename, uint8_t* mem);
-
+int file_insertLine(char* line);
 
 #endif /* FILELOADER_H_ */
